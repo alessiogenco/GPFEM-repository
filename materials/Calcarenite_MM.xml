@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pfem version="1.0.0">
+  <container n="materials" pn="Materials" state="hidden_this" tree_state="open">
+    <blockdata n="material" name="NonlocalV2FDMilan" sequence="1" sequence_type="non_void" editable_name="unique" can_delete_last_item="0" tree_state="open" allow_import="1" icon="material_type">
+      <value n="material_model" pn="Material model" v="NonlocalV1FDMilan" values="NonlocalV1FDMilan" dict="NonlocalV1FDMilan,Non Associated" icon="input_set" tree_state="open"/>
+      <container n="NonlocalV1FDMilan" pn="Properties" tree_state="open" help="Updated lagrangian element compatible" state="[ShowModelProperties]" icon="input_folder">
+        <value n="DENSITY" pn="Density [Mg/m3]" v="1.4" icon="input" tree_state="open"/>
+        <value n="DENSITY_WATER" pn="Water density [Mg/m3]" v="1.0" icon="input" tree_state="open"/>
+        <value n="YOUNG_MODULUS" pn="Young modulus [kPa]" v="300000.0" icon="input" tree_state="open"/>
+        <value n="POISSON_RATIO" pn="Poisson ratio" v="0.1" icon="input" tree_state="close"/>
+        <value n="CRITICAL_STATE_LINE" pn="Slope CSL (M)" v="1.3" icon="input" tree_state="open"/>
+        <value n="CRITICAL_STATE_LINE_PP" pn="Slope CSL Plastic potential (M)" v="1.675" icon="input" tree_state="open"/>
+        <value n="INTERNAL_FRICTION_ANGLE" pn="Friction angle [o]" v="30.0" icon="input" tree_state="close"/>
+        <value n="PS" pn="p s [kPa]" v="1000.0" icon="input" tree_state="open"/>
+        <value n="PT" pn="p t [kPa]" v="350.0" icon="input" tree_state="open"/>
+        <value n="RHOS" pn="rho s" v="20.0" icon="input" tree_state="close"/>
+        <value n="RHOT" pn="rho t" v="15.0" icon="input" tree_state="open"/>
+        <value n="CHIS" pn="chi s" v="0.0" icon="input" tree_state="close"/>
+        <value n="CHIT" pn="chi t" v="0.5" icon="input" tree_state="open"/>
+        <value n="KSIM" pn="k sim" v="5.0" icon="input" tree_state="close"/>
+        <value n="ALPHA_F" pn="alpha f [-]" v="0.75" icon="input" tree_state="open"/>
+        <value n="ALPHA_G" pn="alpha g [-]" v="0.01" icon="input" tree_state="open"/>
+        <value n="MU_F" pn="mu f [-]" v="1.5" icon="input" tree_state="open"/>
+        <value n="MU_G" pn="mu g [-]" v="1.2" icon="input" tree_state="open"/>
+        <value n="PERMEABILITY_WATER" pn="Permeability [m2/(s kPa)]" v="2.55E-09" icon="input" tree_state="open"/>
+        <value n="WATER_BULK_MODULUS" pn="Water bulk modulus [1/kPa]" v="100000000000.0" icon="input" tree_state="close"/>
+        <value n="STABILIZATION_FACTOR_J" pn="Stabilization parameter J (0.0-0.7)" v="0.35" icon="input" tree_state="close"/>
+        <value n="STABILIZATION_FACTOR_P" pn="Stabilization parameter P (0.9-1.5)" v="1.0" icon="input" tree_state="close"/>
+        <value n="STABILIZATION_FACTOR_WP" pn="Stabilization parameter wP (0.9-1.75)" v="1.5" icon="input" tree_state="close"/>
+        <value n="STABILIZATION_FACTOR" pn="Stabilization parameter (0.9-1.5)" v="0.0" icon="input" tree_state="close"/>
+        <value n="MAX_IMPLEX_PLASTIC_MULTIPLIER" pn="Limit implex plastic multiplier" v="1E-4" icon="input" tree_state="close"/>
+        <value n="KOZENY_CARMAN" pn="Kozeny-Carman (0 or 1)" v="0" icon="input" tree_state="close"/>
+        <value n="INITIAL_POROSITY" pn="INITIAL_POROSITY" v="0.5" icon="input" tree_state="close"/>
+        <value n="K0" pn="K0" v="0.6" icon="input" tree_state="close"/>
+        <value n="REFERENCE_PRESSURE" pn="Reference pressure [kPa]" v="10000.0" icon="input" tree_state="close"/>
+        <value n="ALPHA_SHEAR" pn="Alpha (Houlsby)" v="0.0" icon="input" tree_state="close"/>
+        <value n="THICKNESS" pn="Thickness [m]" v="1.0" state="[ShowIfDimension 2D]" icon="input" tree_state="close"/>
+      </container>
+    </blockdata>
+  </container>
+</pfem>
+

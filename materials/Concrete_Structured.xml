@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pfem version="1.0.0">
+  <container n="materials" pn="Materials" state="hidden_this" tree_state="open">
+    <blockdata n="material" name="Structured Clay (MCC+Structure)" sequence="1" sequence_type="non_void" editable_name="unique" can_delete_last_item="0" tree_state="close" allow_import="1" icon="material_type">
+      <value n="material_model" pn="Material model" v="NonlocalV2GensNova" values="NonlocalV2GensNova,NonlocalV3GensNova" dict="NonlocalV2GensNova,Associated,NonlocalV3GensNova,Non Associated" icon="input_set"/>
+      <container n="NonlocalV2GensNova" pn="Properties" tree_state="open" help="Updated lagrangian element compatible" state="[ShowModelProperties]" icon="input_folder">
+        <value n="DENSITY" pn="Density" v="24.0" icon="input"/>
+        <value n="DENSITY_WATER" pn="Water density" v="10.0" icon="input"/>
+        <value n="YOUNG_MODULUS" pn="Young modulus" v="15000000.0" icon="input"/>
+        <value n="POISSON_RATIO" pn="Poisson ratio" v="0.2" icon="input"/>
+        <value n="CRITICAL_STATE_LINE" pn="Slope CSL (M)" v="0.9838" icon="input"/>
+        <value n="INTERNAL_FRICTION_ANGLE" pn="Friction angle (o)" v="25" icon="input"/>
+        <value n="PS" pn="p s" v="90000.0" icon="input"/>
+        <value n="PT" pn="p t" v="500.0" icon="input"/>
+        <value n="RHOS" pn="rho s" v="55.0" icon="input"/>
+        <value n="RHOT" pn="rho t" v="-55.0" icon="input"/>
+        <value n="CHIS" pn="chi s" v="-0.35" icon="input"/>
+        <value n="CHIT" pn="chi t" v="0.0" icon="input"/>
+        <value n="KSIM" pn="k sim" v="20.0" icon="input"/>
+        <value n="PERMEABILITY_WATER" pn="Permeability" v="1.0E-10" icon="input"/>
+        <value n="WATER_BULK_MODULUS" pn="WATER_BULK_MODULUS" v="1E+11" icon="input"/>
+        <value n="STABILIZATION_FACTOR_J" pn="Stabilization parameter J (0.0-0.7)" v="0.35" icon="input"/>
+        <value n="STABILIZATION_FACTOR_P" pn="Stabilization parameter P (0.9-1.5)" v="1.0" icon="input"/>
+        <value n="STABILIZATION_FACTOR_WP" pn="Stabilization parameter wP (0.9-1.75)" v="1.5" icon="input"/>
+        <value n="STABILIZATION_FACTOR" pn="Stabilization parameter (0.9-1.5)" v="0.0" icon="input"/>
+        <value n="MAX_IMPLEX_PLASTIC_MULTIPLIER" pn="Limit implex plastic multiplier" v="1E-4" icon="input"/>
+        <value n="KOZENY_CARMAN" pn="Kozeny-Carman (0 or 1)" v="0" icon="input"/>
+        <value n="INITIAL_POROSITY" pn="INITIAL_POROSITY" v="0.5" icon="input"/>
+        <value n="K0" pn="K0" v="0.6" icon="input"/>
+        <value n="REFERENCE_PRESSURE" pn="Reference pressure" v="1000000000000.0" icon="input"/>
+        <value n="ALPHA_SHEAR" pn="Alpha (Houlsby)" v="0.0" icon="input"/>
+        <value n="THICKNESS" pn="Thickness [m]" v="1.0" state="[ShowIfDimension 2D]" icon="input"/>
+      </container>
+      <container n="NonlocalV3GensNova" pn="Properties" tree_state="open" help="Updated lagrangian element compatible" state="[ShowModelProperties]" icon="input_folder">
+        <value n="DENSITY" pn="Density" v="24.0" icon="input"/>
+        <value n="DENSITY_WATER" pn="Water density" v="10.0" icon="input"/>
+        <value n="YOUNG_MODULUS" pn="Young modulus" v="15000000.0" icon="input"/>
+        <value n="POISSON_RATIO" pn="Poisson ratio" v="0.2" icon="input"/>
+        <value n="CRITICAL_STATE_LINE" pn="Slope CSL (M)" v="0.9838" icon="input"/>
+        <value n="CRITICAL_STATE_LINE_PP" pn="Slope CSL Plastic potential (M)" v="0.9838" icon="input"/>
+        <value n="INTERNAL_FRICTION_ANGLE" pn="Friction angle (o)" v="25" icon="input"/>
+        <value n="PS" pn="p s" v="90000.0" icon="input"/>
+        <value n="PT" pn="p t" v="500.0" icon="input"/>
+        <value n="RHOS" pn="rho s" v="55.0" icon="input"/>
+        <value n="RHOT" pn="rho t" v="-55.0" icon="input"/>
+        <value n="CHIS" pn="chi s" v="-0.35" icon="input"/>
+        <value n="CHIT" pn="chi t" v="0.0" icon="input"/>
+        <value n="KSIM" pn="k sim" v="20.0" icon="input"/>
+        <value n="PERMEABILITY_WATER" pn="Permeability" v="1.0E-10" icon="input"/>
+        <value n="WATER_BULK_MODULUS" pn="WATER_BULK_MODULUS" v="1E+11" icon="input"/>
+        <value n="STABILIZATION_FACTOR_J" pn="Stabilization parameter J (0.0-0.7)" v="0.35" icon="input"/>
+        <value n="STABILIZATION_FACTOR_P" pn="Stabilization parameter P (0.9-1.5)" v="1.0" icon="input"/>
+        <value n="STABILIZATION_FACTOR_WP" pn="Stabilization parameter wP (0.9-1.75)" v="1.5" icon="input"/>
+        <value n="STABILIZATION_FACTOR" pn="Stabilization parameter (0.9-1.5)" v="0.0" icon="input"/>
+        <value n="MAX_IMPLEX_PLASTIC_MULTIPLIER" pn="Limit implex plastic multiplier" v="1E-4" icon="input"/>
+        <value n="KOZENY_CARMAN" pn="Kozeny-Carman (0 or 1)" v="0" icon="input"/>
+        <value n="INITIAL_POROSITY" pn="INITIAL_POROSITY" v="0.5" icon="input"/>
+        <value n="K0" pn="K0" v="0.6" icon="input"/>
+        <value n="REFERENCE_PRESSURE" pn="Reference pressure" v="1000000000000.0" icon="input"/>
+        <value n="ALPHA_SHEAR" pn="Alpha (Houlsby)" v="0.0" icon="input"/>
+        <value n="THICKNESS" pn="Thickness [m]" v="1.0" state="[ShowIfDimension 2D]" icon="input"/>
+      </container>
+    </blockdata>
+  </container>
+</pfem>
+
