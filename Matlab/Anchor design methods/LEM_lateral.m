@@ -3,15 +3,15 @@ clear all
 
 %% ...........................Determination wedge failure geometry .......................................
 %% Properties anchor taper 
-D_outer = 0.30; % [m]
-D_inner = 0.25; % [m]
-H_taper = 0.35; % [m]
+D_outer = 0.00; % [m] % Change geometrical properties here
+D_inner = 0.00; % [m] % Change geometrical properties here
+H_taper = 0.00; % [m] % Change geometrical properties here
 
-%% Properties rock (mudstone from Dorth)
+%% Properties rock 
 
-gamma_dry = 25.7; % [kN/m3]
-E_rock = 32.5; % [GPa]
-nu = 0.3; % [-]
+gamma_dry = 25.7; % [kN/m3] % Change rock properties here
+E_rock = 32.5; % [GPa]  % Change rock properties here
+nu = 0.3; % [-]  % Change rock properties here
 
 % HB parameters
 
@@ -25,7 +25,7 @@ Sigma_ci = 6300; % [kPa]
 
 UCS = Sigma_ci/1000; % [MPa]
 
-% Parameters calculated
+% Parameters calculated from Hoek (2002)
 
 mb = mi*exp((GSI-100)/(28-14*D)); % [-]
 
@@ -552,4 +552,5 @@ h=legend(subplot1,'show','Location', 'northwest');
 % if print_yn==1
 % print('Pulloutcomp','-dpng','-r300')
 % end
+
 
