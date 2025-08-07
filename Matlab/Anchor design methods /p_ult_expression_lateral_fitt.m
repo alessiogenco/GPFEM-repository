@@ -7,7 +7,7 @@ clc
 
 % Import data
 
-my_data = importdata('my_p_y_lateral_data_upd2.csv');
+my_data = importdata('my_data.csv');
 
 
 D_vector = my_data(:,1); % [m]
@@ -16,13 +16,13 @@ E_rock_vector = my_data(:,3); % [GPa]
 p_ult_gpfem = (my_data(:,4)/1000)./D_vector; % [MPa/m]
 
 
-%%
+%% Setting
 
 map = brewermap(9,'Greys');
 colormap("winter")
 fig_settings_print4
 
-%%
+%% Function for plotting fitting 
 
 % function [fitresult, gof] = createFit(E_rock_vector, UCS_vector, p_ult_gpfem)
 %CREATEFIT(E_ROCK_VECTOR,UCS_VECTOR,P_ULT_GPFEM)
@@ -83,3 +83,4 @@ set(gcf, 'Position', [100 100 400 400]);
 % Save figure
 cd 'Output A_G'\ 
 print(['fitting_p_y-' '.png'], '-dpng', '-r1200');
+
